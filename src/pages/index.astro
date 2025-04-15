@@ -1,0 +1,307 @@
+---
+import GridProyecto from "../components/GridProyecto.astro";
+import BlogArticle from '../components/BlogArticle.astro';
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <!-- filtro -->
+  <section class="max-w-6xl mx-auto py-8 px-4">
+    <div class="mb-8">
+      <h1 class="text-5xl font-bold tracking-tight text-gray-900">ESPACIOS</h1>
+      <p class="text-xl text-gray-700">con estilo</p>
+    </div>
+
+    <div class="flex flex-col md:flex-row gap-4">
+      <div class="relative flex-1">
+        <div class="flex items-center relative">
+          <div
+            class="absolute pointer-events-none left-3 top-1/2 transform -translate-y-1/2 z-10"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-gray-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+              ></path>
+            </svg>
+          </div>
+          <select
+            class="appearance-none bg-white border border-gray-300 rounded-md pl-10 pr-10 py-3 w-full text-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-300"
+          >
+            <option value="" selected disabled
+              >Filtrar por tipo de proyecto</option
+            >
+            <option value="residencial">Residencial</option>
+            <option value="comercial">Comercial</option>
+            <option value="industrial">Industrial</option>
+            <option value="oficina">Oficina</option>
+          </select>
+          <div
+            class="absolute pointer-events-none right-3 top-1/2 transform -translate-y-1/2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-gray-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative flex-1">
+        <div class="flex items-center relative">
+          <div
+            class="absolute pointer-events-none left-3 top-1/2 transform -translate-y-1/2 z-10"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-gray-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+          </div>
+          <select
+            class="appearance-none bg-white border border-gray-300 rounded-md pl-10 pr-10 py-3 w-full text-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-300"
+          >
+            <option value="" selected disabled
+              >Filtrar por distrito o ciudad</option
+            >
+            <option value="centro">Centro</option>
+            <option value="norte">Norte</option>
+            <option value="sur">Sur</option>
+            <option value="este">Este</option>
+            <option value="oeste">Oeste</option>
+          </select>
+          <div
+            class="absolute pointer-events-none right-3 top-1/2 transform -translate-y-1/2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-gray-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative flex-1">
+        <div class="flex items-center relative">
+          <div
+            class="absolute pointer-events-none left-3 top-1/2 transform -translate-y-1/2 z-10"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-gray-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+          </div>
+          <select
+            class="appearance-none bg-white border border-gray-300 rounded-md pl-10 pr-10 py-3 w-full text-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-300"
+          >
+            <option value="" selected disabled>Filtrar por proyecto</option>
+            <option value="proyecto1">Proyecto 1</option>
+            <option value="proyecto2">Proyecto 2</option>
+            <option value="proyecto3">Proyecto 3</option>
+            <option value="proyecto4">Proyecto 4</option>
+          </select>
+          <div
+            class="absolute pointer-events-none right-3 top-1/2 transform -translate-y-1/2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 text-gray-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="bg-gray-700 text-white font-medium py-3 px-8 rounded-md hover:bg-gray-800 transition duration-200"
+      >
+        BUSCAR
+      </button>
+    </div>
+  </section>
+
+  <!-- grid -->
+  <section class="max-w-7xl mx-auto py-8 px-4 grid grid-cols-1 md:grid-cols-3 gap-6" >
+    <GridProyecto/>
+    <GridProyecto/>
+    <GridProyecto/>
+    <GridProyecto/>
+    <GridProyecto/>
+    <GridProyecto/>
+    <GridProyecto/>
+    <GridProyecto/>
+    <GridProyecto/>
+    <GridProyecto/>
+    <GridProyecto/>
+    <GridProyecto/>
+  </section>
+
+
+
+
+  <section class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      <div class="flex flex-col md:flex-row">
+        <!-- Left side - Image -->
+        <div class="w-full md:w-1/2 mb-10 md:mb-0">
+          <img 
+            src="/imagenes/banner1.png" 
+            alt="Professional investor drawing graph" 
+            class="w-full h-auto"
+          />
+        </div>
+        
+        <!-- Right side - Content -->
+        <div class="w-full md:w-1/2 flex flex-col justify-center">
+          <!-- Title -->
+          <div class="mb-12">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900">EXPERTOS</h2>
+            <p class="text-xl text-amber-800">en inversión</p>
+          </div>
+          
+          <!-- Benefits grid -->
+          <div class="grid grid-cols-2 gap-8 mb-10">
+            <!-- Benefit 1 -->
+            <div class="text-center">
+              <div class="flex justify-center mb-3">
+                <img src="/imagenes/casco.png" alt="" class="w-15">
+              </div>
+              <p class="text-gray-600">Respaldados por un</p>
+              <p class="font-semibold">grupo constructor</p>
+            </div>
+            
+            <!-- Benefit 2 -->
+            <div class="text-center">
+              <div class="flex justify-center mb-3">
+                <img src="/imagenes/plano.png" alt="" class="w-15">
+              </div>
+              <p class="text-gray-600">Tenemos <span class="font-semibold">+20 años</span> de</p>
+              <p>experiencia</p>
+            </div>
+            
+            <!-- Benefit 3 -->
+            <div class="text-center">
+              <div class="flex justify-center mb-3">
+                <img src="/imagenes/megafono.png" alt="" class="w-15">
+              </div>
+              <p class="text-gray-600">Construimos con</p>
+              <p class="font-semibold">estilo</p>
+            </div>
+            
+            <!-- Benefit 4 -->
+            <div class="text-center">
+              <div class="flex justify-center mb-3">
+                <img src="/imagenes/caja.png" alt="" class="w-15">
+              </div>
+              <p class="text-gray-600">Presentamos proyectos</p>
+              <p>hechos <span class="font-semibold">para ti</span></p>
+            </div>
+          </div>
+          
+          <!-- CTA Button -->
+          <div class="text-center md:text-left">
+            <a href="#conocenos" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-8 rounded-md transition duration-300">
+              CONÓCENOS
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- blog -->
+
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      <!-- Section Header -->
+      <div class="mb-12 text-center md:text-left">
+        <h2 class="text-4xl font-bold text-gray-900 mb-1">COMPARTE</h2>
+        <p class="text-xl text-green-700">lo más reciente</p>
+      </div>
+      
+      <!-- Blog Posts Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <BlogArticle/>
+        <BlogArticle/>
+        <BlogArticle/>
+      </div>
+      
+      <!-- CTA Button -->
+      <div class="mt-12 text-center">
+        <a href="/blog" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-10 rounded-md transition duration-300">
+          VISITAR BLOG
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+</Layout>

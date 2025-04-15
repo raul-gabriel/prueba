@@ -1,0 +1,162 @@
+---
+
+---
+
+<header class="relative shadow-lg shadow-[#f6f6f6]">
+    <!-- Barra principal -->
+    <div class="flex items-center px-4 py-3 bg-white">
+        <!-- Botón menú (5%) -->
+        <button id="menuBtn" class="w-[5%] text-left text-2xl md:text-3xl">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 20 20"
+                ><path fill="#808387" d="M0 3h20v2H0zm0 6h20v2H0zm0 6h20v2H0z"
+                ></path></svg
+            >
+        </button>
+
+        <!-- Logo (75%) -->
+        <div class="w-[75%] flex items-center justify-start pl-2">
+            <img src="/imagenes/logo.png" alt="Logo" class="h-10 md:h-12" />
+        </div>
+
+        <!-- Botón WhatsApp (20%) -->
+        <div class="w-[20%] flex justify-end">
+            <a
+                href="https://wa.me/51999999999"
+                target="_blank"
+                class="bg-[#25D366] p-3 rounded-full"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    viewBox="0 0 432 432"
+                    ><path
+                        fill="#ffffff"
+                        d="M364.5 65Q427 127 427 214.5T364.5 364T214 426q-54 0-101-26L0 429l30-109Q2 271 2 214q0-87 62-149T214 3t150.5 62M214 390q73 0 125-51.5T391 214T339 89.5T214 38T89.5 89.5T38 214q0 51 27 94l4 6l-18 65l67-17l6 3q42 25 90 25m97-132q9 5 10 7q4 6-3 25q-3 8-15 15.5t-21 9.5q-18 2-33-2q-17-6-30-11q-8-4-15.5-8.5t-14.5-9t-13-9.5t-11.5-10t-10.5-10.5t-8.5-9.5t-7-8.5t-5.5-7t-3.5-5L128 222q-22-29-22-55q0-24 19-44q6-7 14-7q6 0 10 1q8 0 12 9q2 3 6 13l7 17.5l3 8.5q3 5 1 9q-3 7-5 9l-3 3l-3 3.5l-2 2.5q-6 6-3 11q13 22 30 37q13 11 43 26q7 3 11-1q12-15 17-21q4-6 12-3q6 3 36 17"
+                    ></path></svg
+                >
+            </a>
+        </div>
+    </div>
+
+    <!-- Menú lateral -->
+    <!-- Menú lateral mejorado -->
+    <aside
+        id="sideMenu"
+        class="fixed top-0 left-0 h-full w-120 bg-white shadow-2xl transform -translate-x-full transition-transform duration-300 z-50"
+    >
+        <div class="p-5 flex flex-col h-full">
+            <!-- Botón cerrar -->
+            <div class="flex justify-end mb-4">
+                <button
+                    id="closeMenuBtn"
+                    class="text-gray-500 hover:text-primary text-2xl"
+                    aria-label="Cerrar menú"
+                >
+                    ✖
+                </button>
+            </div>
+
+            <!-- Contenido del menú -->
+            <h2 class="text-xl font-bold mb-6 text-gray-800">Menú</h2>
+            <ul class="space-y-2 mt-4 text-base font-medium text-gray-700">
+                <li>
+                    <a
+                        href="#"
+                        class="flex items-center text-lg font-bold gap-3 px-4 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-all"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M3 12l2-2m0 0l7-7 7 7m-9 9v-6h4v6m5 0h2a2 2 0 002-2v-7a2 2 0 00-.586-1.414l-7-7a2 2 0 00-2.828 0l-7 7A2 2 0 003 10v7a2 2 0 002 2h2"
+                            ></path>
+                        </svg>
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        class="text-lg font-bold flex items-center gap-3 px-4 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-all"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9.75 17L15 12l-5.25-5M19.5 12a7.5 7.5 0 11-15 0 7.5 7.5 0 0115 0z"
+                            ></path>
+                        </svg>
+                        Servicios
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        class="text-lg font-bold flex items-center gap-3 px-4 py-2 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-all"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M16 12H8m0 0v4m0-4V8m8 4h.01"></path>
+                        </svg>
+                        Contacto
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Puedes añadir más contenido si gustas -->
+        </div>
+    </aside>
+
+    <!-- Fondo oscuro mejorado -->
+    <div id="backdrop" class="fixed inset-0 bg-black/60 hidden z-40"></div>
+
+    <script is:browser>
+        const menuBtn = document.getElementById("menuBtn");
+        const sideMenu = document.getElementById("sideMenu");
+        const backdrop = document.getElementById("backdrop");
+
+        menuBtn?.addEventListener("click", () => {
+            sideMenu?.classList.remove("-translate-x-full");
+            backdrop?.classList.remove("hidden");
+        });
+
+        backdrop?.addEventListener("click", () => {
+            sideMenu?.classList.add("-translate-x-full");
+            backdrop?.classList.add("hidden");
+        });
+
+        const closeMenuBtn = document.getElementById("closeMenuBtn");
+        closeMenuBtn?.addEventListener("click", () => {
+            sideMenu?.classList.add("-translate-x-full");
+            backdrop?.classList.add("hidden");
+        });
+    </script>
+</header>
